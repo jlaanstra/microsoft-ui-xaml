@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27004.2006
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29009.5
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "dev", "dev", "{67599AD5-51EC-44CB-85CE-B60CD8CBA270}"
 EndProject
@@ -99,9 +99,9 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Scroller_APITests", "dev\Sc
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{CDC531B5-F8D8-4A8D-8653-0470B07B2404}"
 	ProjectSection(SolutionItems) = preProject
-		version.props = version.props
 		mux.controls.props = mux.controls.props
 		build\SignConfig.xml = build\SignConfig.xml
+		version.props = version.props
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{5654F115-F01A-495B-91C7-09408ABF14F0}"
@@ -645,6 +645,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pivot", "dev\Pivot\Pivot.vc
 EndProject
 Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "Pivot_TestUI", "dev\Pivot\TestUI\Pivot_TestUI.shproj", "{DEB3FA60-E4A7-4735-89F2-363C7C56B428}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "App6", "test\App6\App6.vcxproj", "{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}"
+EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		dev\ComboBox\ComboBox.vcxitems*{00523caf-422a-4185-9392-d374b72a019a}*SharedItemsImports = 9
@@ -810,7 +812,6 @@ Global
 		dev\TeachingTip\TeachingTip.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		dev\Telemetry\Telemetry.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		dev\TestHooks\TestHooks.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
-		dev\Slider\Slider.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		dev\TimePicker\TimePicker.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		dev\ToolTip\ToolTip.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
 		dev\TreeView\TreeView.vcxitems*{ad0c90b0-4845-4d4b-88f1-86f653f8171b}*SharedItemsImports = 4
@@ -1362,6 +1363,42 @@ Global
 		{74F24BC4-794D-4CB2-8420-80FF7FDACFE9}.Release|x86.ActiveCfg = Release|x86
 		{74F24BC4-794D-4CB2-8420-80FF7FDACFE9}.Release|x86.Build.0 = Release|x86
 		{74F24BC4-794D-4CB2-8420-80FF7FDACFE9}.Release|x86.Deploy.0 = Release|x86
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|ARM.ActiveCfg = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|ARM.Build.0 = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|ARM.Deploy.0 = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|arm64.ActiveCfg = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|arm64.Build.0 = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|arm64.Deploy.0 = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x64.ActiveCfg = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x64.Build.0 = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x64.Deploy.0 = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x86.ActiveCfg = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x86.Build.0 = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug_test|x86.Deploy.0 = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|ARM.ActiveCfg = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|ARM.Build.0 = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|ARM.Deploy.0 = Debug|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|arm64.ActiveCfg = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|arm64.Build.0 = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|arm64.Deploy.0 = Debug|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x64.ActiveCfg = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x64.Build.0 = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x64.Deploy.0 = Debug|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x86.ActiveCfg = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x86.Build.0 = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Debug|x86.Deploy.0 = Debug|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|ARM.ActiveCfg = Release|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|ARM.Build.0 = Release|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|ARM.Deploy.0 = Release|ARM
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|arm64.ActiveCfg = Release|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|arm64.Build.0 = Release|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|arm64.Deploy.0 = Release|ARM64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x64.ActiveCfg = Release|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x64.Build.0 = Release|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x64.Deploy.0 = Release|x64
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x86.ActiveCfg = Release|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x86.Build.0 = Release|Win32
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB}.Release|x86.Deploy.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1604,6 +1641,7 @@ Global
 		{9A94B192-956C-4BA3-9227-0998116704C9} = {67599AD5-51EC-44CB-85CE-B60CD8CBA270}
 		{1D9E0828-8E69-44FF-8F6F-EDC3D858E42A} = {9A94B192-956C-4BA3-9227-0998116704C9}
 		{DEB3FA60-E4A7-4735-89F2-363C7C56B428} = {9A94B192-956C-4BA3-9227-0998116704C9}
+		{B759F4D0-1DBE-4BB0-B45C-709CE1E8BDDB} = {D3327F36-E161-4FED-A0F4-56F2B735827E}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {D93836AB-52D3-4DE2-AE25-23F26F55ECED}
