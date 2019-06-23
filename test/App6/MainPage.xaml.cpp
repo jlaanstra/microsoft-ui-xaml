@@ -38,8 +38,9 @@ void MainPage::OnAppendClick(Platform::Object^ sender, Windows::UI::Xaml::Routed
     auto item = ref new Item();
     item->Background = ref new SolidColorBrush(Colors::Red);
     std::wstringstream str;
-    str << L"http://lorempixel.com/400/200/?";
+    str << L"http://loremflickr.com/400/200/?";
     str << m_count++;
+    str << L"\r\n";
     item->Text = ref new String(str.str().c_str());
     m_items->Append(item);
 }
@@ -49,30 +50,41 @@ void MainPage::OnSetClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEve
     auto item = ref new Item();
     item->Background = ref new SolidColorBrush(Colors::Red);
     std::wstringstream str;
-    str << L"http://lorempixel.com/400/200/?";
+    str << L"http://loremflickr.com/400/200/?";
     str << m_count++;
+    str << L"\r\n";
     item->Text = ref new String(str.str().c_str());
 
     int index = _wtoi(IndexTextBox->Text->Data());
 
-    m_items->SetAt(index, item);
+    if (m_items->Size > index)
+    {
+        m_items->SetAt(index, item);
+    }
 }
 
 void MainPage::OnRemoveClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
     int index = _wtoi(IndexTextBox->Text->Data());
 
-    m_items->RemoveAt(index);
+    if (m_items->Size > index)
+    {
+        m_items->RemoveAt(index);
+    }
 }
 
 void MainPage::OnRemoveAppendClick(Platform::Object^ sender, Windows::UI::Xaml::RoutedEventArgs^ e)
 {
-    m_items->RemoveAt(0);
+    if (m_items->Size > 0)
+    {
+        m_items->RemoveAt(0);
+    }
     auto item = ref new Item();
     item->Background = ref new SolidColorBrush(Colors::Red);
     std::wstringstream str;
-    str << L"http://lorempixel.com/400/200/?";
+    str << L"http://loremflickr.com/400/200/?";
     str << m_count++;
+    str << L"\r\n";
     item->Text = ref new String(str.str().c_str());
     m_items->Append(item);
 }
